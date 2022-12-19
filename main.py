@@ -41,8 +41,7 @@ for i in myNewString:
     print(dic) 
 
 for k, v in dic.items():
-    print('{}={} times '.format(k,v))
-'''
+    print('{}={} times '.format(k,v)) 
 #tree
 
 rows = 6 
@@ -64,3 +63,10 @@ for i in StringToArray:
 
 
 print('Substring is found in: ', counter, ' times')
+'''
+
+#challenge
+
+accBalance = 10000
+
+input = input('choose an option')
