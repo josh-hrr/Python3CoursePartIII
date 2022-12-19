@@ -69,4 +69,37 @@ print('Substring is found in: ', counter, ' times')
 
 accBalance = 10000
 
-input = input('choose an option')
+print('1. Check Balance')
+print('2. WithDraw')
+print('3. Deposit Cash')
+print('4. Deposit Check') 
+
+chosen = int(input('choose an option: '))  
+
+if chosen == 1:
+  print('1. Check Balance')
+  print(accBalance) 
+elif chosen == 2:
+  print('2. WithDraw')
+  withdraw = int(input('enter how much: '))
+  accBalance = accBalance - withdraw
+  print('withdrawing...', withdraw)
+  print('new Balance: ', accBalance)
+  
+elif chosen == 3:
+  print('3. Deposit Cash')
+  deposit = int(input('enter how much: '))
+  accBalance = accBalance + deposit 
+  print('depositing...', deposit) 
+  print('new Balance: ', accBalance)
+elif chosen == 4:
+  print('4. Deposit Check') 
+  print('you need to go to the bank for this request')
+
+#function
+
+def testing(a, b):
+    return "sum: ", (a+b) 
+
+newSum = testing(1,2)
+print(testing(1,2))
