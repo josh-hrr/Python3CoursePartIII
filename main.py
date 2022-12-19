@@ -3,9 +3,6 @@ var1List = var1.split()
 counter = 0 
 result = ''
 
-for i in var1List: 
-    counter = counter + 1 
-    print(var1List[(counter - 1) - 1])
-    result += var1List[(counter - 1) - 1] + ' '
-
+for i in range(len(var1List)-1, -1, -1):
+    result += var1List[i] + ' '
 print(result)
